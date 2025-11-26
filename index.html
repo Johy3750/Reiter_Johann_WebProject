@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Resurse de calcul și acces la internet - Numele Tău</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Resurse de calcul și acces la internet</h1>
+        <p>Evaluare „Informatică aplicată” – HTML, CSS, JS</p>
+    </header>
+
+    <main>
+        <!-- SECȚIUNEA 1: DATE PERSONALE + SISTEM PRINCIPAL -->
+        <section id="personal">
+            <h2>Date personale &amp; sistem principal de lucru</h2>
+
+            <div class="two-columns">
+                <article class="box">
+                    <h3>Date de contact</h3>
+                    <ul>
+                        <li><strong>Nume:</strong> Reiter Johann</li>
+                        <li><strong>Email:</strong> jmreiter2015@gmail.com</li>
+                        <li><strong>Telefon:</strong> +40 755567236</li>
+                        <li><strong>Locație:</strong> Sighisoara, Romania</li>
+                    </ul>
+                </article>
+
+                <article class="box">
+                    <h3>Componente hardware – sistem principal</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Componentă</th>
+                                <th>Detalii</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Procesor (CPU)</td>
+                                <td>Intel Core i5-xxxx / AMD Ryzen x</td>
+                            </tr>
+                            <tr>
+                                <td>Memorie RAM</td>
+                                <td>16 GB DDR4</td>
+                            </tr>
+                            <tr>
+                                <td>Stocare</td>
+                                <td>1TB GB SSD NVMe</td>
+                            </tr>
+                            <tr>
+                                <td>Placă video (GPU)</td>
+                                <td>Integrată / NVIDIA / AMD</td>
+                            </tr>
+                            <tr>
+                                <td>Sistem de operare</td>
+                                <td>macOS Sonoma / Windows 11 / Linux</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
+            </div>
+        </section>
+
+        <!-- SECȚIUNEA 2: REȚEA & CONEXIUNE -->
+        <section id="network">
+            <h2>Rețeaua personală &amp; conexiunea la internet</h2>
+
+            <div class="two-columns">
+                <article class="box">
+                    <h3>Diagrama rețelei personale</h3>
+                    <p>Structura rețelei de acasă / din locul în care lucrez în prezent.</p>
+                    <img src="images/diagrama_retea.png"
+                         alt="Diagrama rețelei personale">
+                </article>
+
+                <article class="box">
+                    <h3>Caracteristicile conexiunii la rețea</h3>
+                    <ul>
+                        <li><strong>Furnizor internet (ISP):</strong> DIGI </li>
+                        <li><strong>Tip conexiune:</strong> Fibra optică / Cablu / Wi-Fi</li>
+                        <li><strong>Viteză nominală download:</strong> 300 Mbps</li>
+                        <li><strong>Viteză nominală upload:</strong> 100 Mbps</li>
+                        <li><strong>Dispozitiv principal:</strong> ASUS/AX1800 DUAL BAND</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <!-- SECȚIUNEA 3: MONITORIZARE RESURSE -->
+        <section id="monitorizare">
+            <h2>Monitorizare resurse în timpul streaming-ului video</h2>
+            <p class="hint">
+                Vizionare video online (YouTube / Vimeo).<br>
+                <strong>Dublu-click pe această secțiune pentru a porni / opri slide-show-ul cu imagini.</strong>
+            </p>
+
+            <!-- Imaginile statice inițiale -->
+            <div id="resource-grid">
+                <figure>
+                    <img src="images/monitorizare_cpu.png" alt="Utilizare CPU">
+                    <figcaption>Utilizare CPU</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/monitorizare_memorie.png" alt="Utilizare memorie RAM">
+                    <figcaption>Memorie RAM</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/monitorizare_disk.png" alt="Utilizare disc">
+                    <figcaption>Activitate disc</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/monitorizare_procese.png" alt="Procese și servicii">
+                    <figcaption>Procese &amp; servicii</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/monitorizare_retea.png" alt="Porturi / trafic rețea">
+                    <figcaption>Trafic rețea &amp; porturi</figcaption>
+                </figure>
+            </div>
+
+            <!-- Slide-show (inițial ascuns) -->
+            <div id="slideshow" class="hidden">
+                <img id="slideshow-image" src="" alt="Slide monitorizare resurse">
+                <p id="slideshow-caption"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Reiter Johann – Proiect „Informatică aplicată”</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
