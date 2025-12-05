@@ -1,4 +1,4 @@
-// Elementele principale
+
 console.log("JS loaded OK");
 const monitorizareSection = document.getElementById('monitorizare');
 const grid = document.getElementById('resource-grid');
@@ -6,7 +6,7 @@ const slideshow = document.getElementById('slideshow');
 const slideshowImage = document.getElementById('slideshow-image');
 const slideshowCaption = document.getElementById('slideshow-caption');
 
-// Imaginile folosite în slide-show (aceleași ca în grid)
+
 const slides = [
     {
         src: 'images/monitorizare_cpu.png',
@@ -26,7 +26,7 @@ const slides = [
     },
     {
         src: 'images/monitorizare_retea.png',
-        caption: 'Trafic rețea și porturi deschise'
+        caption: 'Trafic retea și porturi deschise'
     }
 ];
 
@@ -34,7 +34,7 @@ let currentIndex = 0;
 let intervalId = null;
 let slideshowActive = false;
 
-// Afișează un anumit slide
+
 function showSlide(index) {
     const slide = slides[index];
     slideshowImage.src = slide.src;
@@ -42,7 +42,7 @@ function showSlide(index) {
     slideshowCaption.textContent = slide.caption;
 }
 
-// Pornește slide-show-ul (tranziție la 3 secunde)
+
 function startSlideshow() {
     if (slideshowActive) return;
 
@@ -59,8 +59,7 @@ function startSlideshow() {
     }, 3000); // 3 secunde
 }
 
-// Oprește slide-show-ul și revine la imaginile statice
-function stopSlideshow() {
+
     slideshowActive = false;
     clearInterval(intervalId);
     intervalId = null;
@@ -69,7 +68,7 @@ function stopSlideshow() {
     grid.classList.remove('hidden');
 }
 
-// Dublu-click pe secțiunea „Monitorizare resurse” pornește/oprește slide-show-ul
+
 monitorizareSection.addEventListener('dblclick', () => {
     if (!slideshowActive) {
         startSlideshow();
