@@ -56,16 +56,18 @@ function startSlideshow() {
     intervalId = setInterval(() => {
         currentIndex = (currentIndex + 1) % slides.length;
         showSlide(currentIndex);
+		console.log(currentIndex, slides.length - 1)
     }, 3000); // 3 secunde
+}
 
-    slideshowActive = false;
+function stopSlideshow() {
     clearInterval(intervalId);
     intervalId = null;
 
     slideshow.classList.add('hidden');
     grid.classList.remove('hidden');
+    slideshowActive = false;
 }
-
 
 monitorizareSection.addEventListener('dblclick', () => {
     if (!slideshowActive) {
